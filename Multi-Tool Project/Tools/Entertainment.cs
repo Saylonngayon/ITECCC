@@ -25,14 +25,9 @@ namespace Multi_Tool_Project.Tools
 
         private void btnTQ_Click(object sender, EventArgs e)
         {
-            triviaQuiz tqForm = new triviaQuiz();
-            tqForm.Show();
-            this.Hide();
+            tqIntro introForm = new tqIntro();
+            introForm.ShowDialog();
         }
-
-
-
-
 
         private void btnReturn_Click_1(object sender, EventArgs e)
         {
