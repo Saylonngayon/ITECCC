@@ -140,5 +140,10 @@ namespace Multi_Tool_Project.Tools.Ent
         {
 
         }
+
+        private void btnRestart_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

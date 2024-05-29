@@ -121,6 +121,7 @@
             btnRestart.TabIndex = 31;
             btnRestart.Text = "Restart";
             btnRestart.UseVisualStyleBackColor = true;
+            btnRestart.Click += btnRestart_Click_1;
             // 
             // btnEndQuiz
             // 

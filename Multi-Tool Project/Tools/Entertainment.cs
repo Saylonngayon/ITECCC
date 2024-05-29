@@ -27,6 +27,7 @@ namespace Multi_Tool_Project.Tools
         {
             tqIntro introForm = new tqIntro();
             introForm.ShowDialog();
+
         }
 
         private void btnReturn_Click_1(object sender, EventArgs e)
