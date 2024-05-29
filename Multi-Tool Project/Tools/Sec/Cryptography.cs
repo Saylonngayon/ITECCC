@@ -115,15 +115,35 @@ namespace Multi_Tool_Project.Tools.Sec
             }
         }
 
-        private void btnReturn_Click(object sender, EventArgs e)
+        
+       
+
+        private void Cryptography_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelInput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReturn_Click_1(object sender, EventArgs e)
         {
             Security securityForm = new Security();
             securityForm.Show();
             this.Hide();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
+            MessageBox.Show("Exiting the System, Goodbye!");
+            Thread.Sleep(50);
             Application.Exit();
         }
     }

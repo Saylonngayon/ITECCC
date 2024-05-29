@@ -72,16 +72,28 @@ namespace Multi_Tool_Project.Tools.Finance
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+       
+
+
+
+        private void lblResult_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void btnReturn_Click(object sender, EventArgs e)
+        private void btnReturn_Click_1(object sender, EventArgs e)
         {
             FinanceTool financeForm = new FinanceTool();
             financeForm.Show();
             this.Hide();
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Exiting the System, Goodbye!");
+            Thread.Sleep(50);
+            Application.Exit();
+
         }
     }
 }

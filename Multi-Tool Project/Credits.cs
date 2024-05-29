@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Multi_Tool_Project
 {
-	//Testing testing testing
+    //Testing testing testing
     public partial class Credits : Form
     {
         public Credits()
@@ -53,6 +53,11 @@ namespace Multi_Tool_Project
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Credits_Load(object sender, EventArgs e)
         {
 
         }

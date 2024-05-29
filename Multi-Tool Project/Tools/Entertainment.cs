@@ -29,5 +29,29 @@ namespace Multi_Tool_Project.Tools
             tqForm.Show();
             this.Hide();
         }
+
+
+
+
+
+        private void btnReturn_Click_1(object sender, EventArgs e)
+        {
+            mainHub mainHubForm = new mainHub();
+            mainHubForm.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Exiting the System, Goodbye!");
+            Thread.Sleep(50);
+            Application.Exit();
+
+        }
+
+        private void Entertainment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

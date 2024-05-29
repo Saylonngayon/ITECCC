@@ -23,7 +23,6 @@ namespace Multi_Tool_Project.Tools
             {
                 "Area",
                 "Bytes",
-                "Currency",
                 "Energy",
                 "Length",
                 "Mass",
@@ -49,16 +48,16 @@ namespace Multi_Tool_Project.Tools
                         , "Square Feet" , "Square Millimeters" , "Square Yards" });
                     break;
                 case "Bytes":
-                    comboBoxUnitFrom.Items.AddRange(new string[] { "Byte", "Kilobyte", "Megabyte", "Gigabyte" });
-                    comboBoxUnitTo.Items.AddRange(new string[] { "Byte", "Kilobyte", "Megabyte", "Gigabyte" });
+                    comboBoxUnitFrom.Items.AddRange(new string[] { "Byte", "Kilobyte", "Megabyte", "Gigabyte", "Terabyte", "Petabyte", "Exabyte" });
+                    comboBoxUnitTo.Items.AddRange(new string[] { "Byte", "Kilobyte", "Megabyte", "Gigabyte", "Terabyte", "Petabyte", "Exabyte" });
                     break;
                 case "Energy":
                     comboBoxUnitFrom.Items.AddRange(new string[] { "Joule", "Calorie", "Watt-hour" });
                     comboBoxUnitTo.Items.AddRange(new string[] { "Joule", "Calorie", "Watt-hour" });
                     break;
                 case "Length":
-                    comboBoxUnitFrom.Items.AddRange(new string[] { "Meter", "Kilometer", "Mile", "Yard", "Foot" });
-                    comboBoxUnitTo.Items.AddRange(new string[] { "Meter", "Kilometer", "Mile", "Yard", "Foot" });
+                    comboBoxUnitFrom.Items.AddRange(new string[] { "Meter", "Kilometer", "Mile", "Yard", "Foot", "Centimeter", "Inches", "Millimeters", "Nanometers", "Micrometers" });
+                    comboBoxUnitTo.Items.AddRange(new string[] { "Meter", "Kilometer", "Mile", "Yard", "Foot", "Centimeter", "Inches", "Millimeters", "Nanometers", "Micrometers" });
                     break;
                 case "Mass":
                     comboBoxUnitFrom.Items.AddRange(new string[] { "Gram", "Kilogram", "Pound", "Ounce" });
@@ -221,6 +220,15 @@ namespace Multi_Tool_Project.Tools
                 case "Gigabyte":
                     valueInBytes = value * 1_073_741_824; // 1 GB = 1024 * 1024 * 1024 B = 1,073,741,824 B
                     break;
+                case "Terabyte":
+                    valueInBytes = value * 1.099511628e+12;
+                    break;
+                case "Petabyte":
+                    valueInBytes = value * 1.125899907e+15; //Petabytes
+                    break;
+                case "Exabyte":
+                    valueInBytes = value * 1024L * 1024L * 1024L * 1024L * 1024L * 1024L;
+                    break;
                 default:
                     throw new NotImplementedException($"Conversion from {fromUnit} is not implemented.");
             }
@@ -240,6 +248,15 @@ namespace Multi_Tool_Project.Tools
                     break;
                 case "Gigabyte":
                     convertedValue = valueInBytes / 1_073_741_824; // 1 GB = 1,073,741,824 B
+                    break;
+                case "Terabyte":
+                    convertedValue = valueInBytes / 1.099511628e+12;
+                    break;
+                case "Petabyte":
+                    convertedValue = valueInBytes / 1.125899907e+15; //Petabytes
+                    break;
+                case "Exabyte":
+                    convertedValue = valueInBytes / 1024L * 1024L * 1024L * 1024L * 1024L * 1024L; //Exabytes
                     break;
                 default:
                     throw new NotImplementedException($"Conversion to {toUnit} is not implemented.");
@@ -347,5 +364,19 @@ namespace Multi_Tool_Project.Tools
 
         }
 
+        private void comboBoxUnitType_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

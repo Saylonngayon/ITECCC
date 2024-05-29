@@ -25,23 +25,27 @@ namespace Multi_Tool_Project.Tools
             this.Hide();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+
+
+        private void Security_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Exiting the System, Goodbye!");
-            Thread.Sleep(50);
-            Application.Exit();
+
         }
 
-        private void btnReturn_Click(object sender, EventArgs e)
+
+
+        private void btnReturn_Click_1(object sender, EventArgs e)
         {
             mainHub mainHubForm = new mainHub();
             mainHubForm.Show();
             this.Hide();
         }
 
-        private void Security_Load(object sender, EventArgs e)
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Exiting the System, Goodbye!");
+            Thread.Sleep(50);
+            Application.Exit();
         }
     }
 }

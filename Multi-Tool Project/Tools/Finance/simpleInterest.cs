@@ -17,22 +17,15 @@ namespace Multi_Tool_Project.Tools.Finance
             InitializeComponent();
         }
 
+
         private void SimpleInterest_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
 
-        private void btnReturn_Click(object sender, EventArgs e)
-        {
-            FinanceTool FinanceForm = new FinanceTool();
-            FinanceForm.Show();
-            this.Hide();
-        }
+      
 
         private void btnConvert_Click(object sender, EventArgs e)
         {
@@ -88,6 +81,31 @@ namespace Multi_Tool_Project.Tools.Finance
             // Convert days and months to years
             double totalYears = (days / 365.0) + (months / 12.0) + years;
             return principal * rate / 100 * totalYears;
+        }
+
+        private void textBoxDays_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReturn_Click_1(object sender, EventArgs e)
+        {
+            FinanceTool financeForm = new FinanceTool();
+            financeForm.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Exiting the System, Goodbye!");
+            Thread.Sleep(50);
+            Application.Exit();
+
         }
     }
 }

@@ -41,7 +41,6 @@ namespace Multi_Tool_Project.Tools.Ent
             lblScore.Visible = false;
 
             btnRestart.Visible = false;
-            btnEndQuiz.Visible = false;
         }
 
         private void ShowQuizControls()
@@ -69,7 +68,6 @@ namespace Multi_Tool_Project.Tools.Ent
             btnSubmit.Visible = false;
 
             btnRestart.Visible = true;
-            btnEndQuiz.Visible = true;
         }
 
         private async void LoadNextQuestion()
@@ -175,10 +173,27 @@ namespace Multi_Tool_Project.Tools.Ent
         private void btnEndQuiz_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Returning to Entertainment form.", "End Quiz");
-            // Logic to return to Entertainment form
+            mainHub mainHubForm = new mainHub();
+            mainHubForm.Show();
+            this.Hide();
         }
         private void triviaQuiz_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+           Entertainment entertainment = new Entertainment();
+            entertainment.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Exiting the System, Goodbye!");
+            Thread.Sleep(50);
+            Application.Exit();
 
         }
     }

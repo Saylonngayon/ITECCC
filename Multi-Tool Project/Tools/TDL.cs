@@ -287,5 +287,30 @@ namespace Multi_Tool_Project.Tools
 
             MessageBox.Show(instructions, "To-Do List Application Instructions", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbPriority_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
