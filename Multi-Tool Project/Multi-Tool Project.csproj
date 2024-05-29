@@ -28,4 +28,10 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resources\paper.jpg">
+      <CustomToolNamespace></CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
 </Project>

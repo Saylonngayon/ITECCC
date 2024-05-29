@@ -37,61 +37,59 @@
             // 
             // btnStartQuiz
             // 
-            btnStartQuiz.Location = new Point(69, 148);
-            btnStartQuiz.Margin = new Padding(3, 4, 3, 4);
+            btnStartQuiz.Location = new Point(60, 111);
             btnStartQuiz.Name = "btnStartQuiz";
-            btnStartQuiz.Size = new Size(517, 380);
+            btnStartQuiz.Size = new Size(452, 285);
             btnStartQuiz.TabIndex = 12;
             btnStartQuiz.Text = "Start";
             btnStartQuiz.UseVisualStyleBackColor = true;
+            btnStartQuiz.Click += btnStartQuiz_Click;
             // 
             // txtNumQuestions
             // 
-            txtNumQuestions.Location = new Point(69, 77);
-            txtNumQuestions.Margin = new Padding(3, 4, 3, 4);
+            txtNumQuestions.Location = new Point(60, 58);
             txtNumQuestions.Name = "txtNumQuestions";
-            txtNumQuestions.Size = new Size(545, 27);
+            txtNumQuestions.Size = new Size(477, 23);
             txtNumQuestions.TabIndex = 11;
             // 
             // lblEnterQuestions
             // 
             lblEnterQuestions.AutoSize = true;
-            lblEnterQuestions.Location = new Point(69, 53);
+            lblEnterQuestions.Location = new Point(60, 40);
             lblEnterQuestions.Name = "lblEnterQuestions";
-            lblEnterQuestions.Size = new Size(211, 20);
+            lblEnterQuestions.Size = new Size(170, 15);
             lblEnterQuestions.TabIndex = 10;
             lblEnterQuestions.Text = "Enter the number of questions:";
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(850, 563);
-            btnExit.Margin = new Padding(3, 4, 3, 4);
+            btnExit.Location = new Point(744, 422);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(67, 37);
+            btnExit.Size = new Size(59, 28);
             btnExit.TabIndex = 25;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
             // 
             // btnReturn
             // 
-            btnReturn.Location = new Point(850, 523);
-            btnReturn.Margin = new Padding(3, 4, 3, 4);
+            btnReturn.Location = new Point(744, 392);
             btnReturn.Name = "btnReturn";
-            btnReturn.Size = new Size(67, 37);
+            btnReturn.Size = new Size(59, 28);
             btnReturn.TabIndex = 24;
             btnReturn.Text = "Return";
             btnReturn.UseVisualStyleBackColor = true;
             // 
             // tqIntro
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(982, 653);
+            ClientSize = new Size(859, 490);
             Controls.Add(btnExit);
             Controls.Add(btnReturn);
             Controls.Add(btnStartQuiz);
             Controls.Add(txtNumQuestions);
             Controls.Add(lblEnterQuestions);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "tqIntro";
             Text = "tqIntro";
             ResumeLayout(false);
