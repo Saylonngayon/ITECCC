@@ -23,14 +23,9 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            btnExit = new Button();
-            btnReturn = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimpleInterest));
             buttonCalculate = new Button();
             radioButtonMonthly = new RadioButton();
             radioButtonYearly = new RadioButton();
@@ -44,147 +39,227 @@
             textBoxDays = new TextBox();
             textBoxMonths = new TextBox();
             textBoxYears = new TextBox();
+            btnExit = new Button();
+            btnReturn = new Button();
             SuspendLayout();
-            // 
-            // btnExit
-            // 
-            btnExit.Location = new Point(12, 397);
-            btnExit.Name = "btnExit";
-            btnExit.Size = new Size(59, 41);
-            btnExit.TabIndex = 13;
-            btnExit.Text = "Exit";
-            btnExit.UseVisualStyleBackColor = true;
-            btnExit.Click += btnExit_Click;
-            // 
-            // btnReturn
-            // 
-            btnReturn.Location = new Point(77, 397);
-            btnReturn.Name = "btnReturn";
-            btnReturn.Size = new Size(59, 41);
-            btnReturn.TabIndex = 12;
-            btnReturn.Text = "Return";
-            btnReturn.UseVisualStyleBackColor = true;
-            btnReturn.Click += btnReturn_Click;
             // 
             // buttonCalculate
             // 
-            buttonCalculate.Location = new Point(189, 59);
+            buttonCalculate.BackColor = Color.Transparent;
+            buttonCalculate.FlatAppearance.BorderSize = 0;
+            buttonCalculate.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonCalculate.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            buttonCalculate.FlatStyle = FlatStyle.Flat;
+            buttonCalculate.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            buttonCalculate.ForeColor = Color.White;
+            buttonCalculate.Location = new Point(116, 583);
+            buttonCalculate.Margin = new Padding(3, 4, 3, 4);
             buttonCalculate.Name = "buttonCalculate";
-            buttonCalculate.Size = new Size(75, 23);
+            buttonCalculate.Size = new Size(195, 43);
             buttonCalculate.TabIndex = 14;
             buttonCalculate.Text = "Calculate";
-            buttonCalculate.UseVisualStyleBackColor = true;
+            buttonCalculate.UseVisualStyleBackColor = false;
             buttonCalculate.Click += btnConvert_Click;
             // 
             // radioButtonMonthly
             // 
             radioButtonMonthly.AutoSize = true;
-            radioButtonMonthly.Location = new Point(132, 127);
+            radioButtonMonthly.BackColor = Color.Transparent;
+            radioButtonMonthly.FlatStyle = FlatStyle.Popup;
+            radioButtonMonthly.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            radioButtonMonthly.ForeColor = Color.White;
+            radioButtonMonthly.Location = new Point(304, 76);
+            radioButtonMonthly.Margin = new Padding(3, 4, 3, 4);
             radioButtonMonthly.Name = "radioButtonMonthly";
-            radioButtonMonthly.Size = new Size(70, 19);
+            radioButtonMonthly.Size = new Size(153, 29);
             radioButtonMonthly.TabIndex = 15;
             radioButtonMonthly.TabStop = true;
-            radioButtonMonthly.Text = "Monthly\r\n";
-            radioButtonMonthly.UseVisualStyleBackColor = true;
+            radioButtonMonthly.Text = "  Monthly\r\n";
+            radioButtonMonthly.UseVisualStyleBackColor = false;
             // 
             // radioButtonYearly
             // 
             radioButtonYearly.AutoSize = true;
-            radioButtonYearly.Location = new Point(208, 127);
+            radioButtonYearly.BackColor = Color.Transparent;
+            radioButtonYearly.FlatStyle = FlatStyle.Popup;
+            radioButtonYearly.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            radioButtonYearly.ForeColor = Color.White;
+            radioButtonYearly.Location = new Point(517, 76);
+            radioButtonYearly.Margin = new Padding(3, 4, 3, 4);
             radioButtonYearly.Name = "radioButtonYearly";
-            radioButtonYearly.Size = new Size(56, 19);
+            radioButtonYearly.Size = new Size(141, 29);
             radioButtonYearly.TabIndex = 16;
             radioButtonYearly.TabStop = true;
-            radioButtonYearly.Text = "Yearly";
-            radioButtonYearly.UseVisualStyleBackColor = true;
+            radioButtonYearly.Text = "  Yearly";
+            radioButtonYearly.UseVisualStyleBackColor = false;
             // 
             // radioButtonDaily
             // 
             radioButtonDaily.AutoSize = true;
-            radioButtonDaily.Location = new Point(75, 127);
+            radioButtonDaily.BackColor = Color.Transparent;
+            radioButtonDaily.FlatStyle = FlatStyle.Popup;
+            radioButtonDaily.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            radioButtonDaily.ForeColor = Color.White;
+            radioButtonDaily.Location = new Point(91, 76);
+            radioButtonDaily.Margin = new Padding(3, 4, 3, 4);
             radioButtonDaily.Name = "radioButtonDaily";
-            radioButtonDaily.Size = new Size(51, 19);
+            radioButtonDaily.Size = new Size(117, 29);
             radioButtonDaily.TabIndex = 17;
             radioButtonDaily.TabStop = true;
-            radioButtonDaily.Text = "Daily";
-            radioButtonDaily.UseVisualStyleBackColor = true;
+            radioButtonDaily.Text = "  Daily";
+            radioButtonDaily.UseVisualStyleBackColor = false;
             // 
             // textBoxRate
             // 
-            textBoxRate.Location = new Point(132, 152);
+            textBoxRate.BorderStyle = BorderStyle.None;
+            textBoxRate.Font = new Font("Segoe UI", 16F);
+            textBoxRate.Location = new Point(361, 153);
+            textBoxRate.Margin = new Padding(3, 4, 3, 4);
             textBoxRate.Name = "textBoxRate";
-            textBoxRate.Size = new Size(100, 23);
+            textBoxRate.Size = new Size(377, 36);
             textBoxRate.TabIndex = 18;
             // 
             // textBoxDeposit
             // 
-            textBoxDeposit.Location = new Point(132, 181);
+            textBoxDeposit.BorderStyle = BorderStyle.None;
+            textBoxDeposit.Font = new Font("Segoe UI", 16F);
+            textBoxDeposit.Location = new Point(361, 237);
+            textBoxDeposit.Margin = new Padding(3, 4, 3, 4);
             textBoxDeposit.Name = "textBoxDeposit";
-            textBoxDeposit.Size = new Size(100, 23);
+            textBoxDeposit.Size = new Size(377, 36);
             textBoxDeposit.TabIndex = 19;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(75, 152);
+            label1.BackColor = Color.Transparent;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(146, 160);
             label1.Name = "label1";
-            label1.Size = new Size(51, 15);
+            label1.Size = new Size(119, 25);
             label1.TabIndex = 20;
             label1.Text = "Rate(%):";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(29, 181);
+            label2.BackColor = Color.Transparent;
+            label2.FlatStyle = FlatStyle.Flat;
+            label2.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(100, 244);
             label2.Name = "label2";
-            label2.Size = new Size(97, 15);
+            label2.Size = new Size(217, 25);
             label2.TabIndex = 21;
             label2.Text = "Deposit Amount:";
             // 
             // labelOutput
             // 
             labelOutput.AutoSize = true;
-            labelOutput.Location = new Point(440, 349);
+            labelOutput.BackColor = Color.Transparent;
+            labelOutput.FlatStyle = FlatStyle.Flat;
+            labelOutput.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            labelOutput.Location = new Point(361, 592);
             labelOutput.Name = "labelOutput";
-            labelOutput.Size = new Size(35, 15);
+            labelOutput.Size = new Size(94, 25);
             labelOutput.TabIndex = 22;
             labelOutput.Text = "Total:";
+            labelOutput.Click += labelOutput_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(75, 109);
+            label4.BackColor = Color.Transparent;
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Gill Sans Ultra Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(66, 9);
             label4.Name = "label4";
-            label4.Size = new Size(136, 15);
+            label4.Size = new Size(551, 48);
             label4.TabIndex = 26;
             label4.Text = "Interest Calculation Type";
             // 
             // textBoxDays
             // 
-            textBoxDays.Location = new Point(132, 220);
+            textBoxDays.BorderStyle = BorderStyle.None;
+            textBoxDays.Font = new Font("Segoe UI", 16F);
+            textBoxDays.Location = new Point(361, 323);
+            textBoxDays.Margin = new Padding(3, 4, 3, 4);
             textBoxDays.Name = "textBoxDays";
-            textBoxDays.Size = new Size(100, 23);
+            textBoxDays.PlaceholderText = "Days";
+            textBoxDays.Size = new Size(377, 36);
             textBoxDays.TabIndex = 31;
+            textBoxDays.TextChanged += textBoxDays_TextChanged;
             // 
             // textBoxMonths
             // 
-            textBoxMonths.Location = new Point(132, 260);
+            textBoxMonths.BorderStyle = BorderStyle.None;
+            textBoxMonths.Font = new Font("Segoe UI", 16F);
+            textBoxMonths.Location = new Point(361, 411);
+            textBoxMonths.Margin = new Padding(3, 4, 3, 4);
             textBoxMonths.Name = "textBoxMonths";
-            textBoxMonths.Size = new Size(100, 23);
+            textBoxMonths.PlaceholderText = "Months";
+            textBoxMonths.Size = new Size(377, 36);
             textBoxMonths.TabIndex = 32;
             // 
             // textBoxYears
             // 
-            textBoxYears.Location = new Point(132, 296);
+            textBoxYears.BorderStyle = BorderStyle.None;
+            textBoxYears.Font = new Font("Segoe UI", 16F);
+            textBoxYears.Location = new Point(361, 493);
+            textBoxYears.Margin = new Padding(3, 4, 3, 4);
             textBoxYears.Name = "textBoxYears";
-            textBoxYears.Size = new Size(100, 23);
+            textBoxYears.PlaceholderText = "Years";
+            textBoxYears.Size = new Size(377, 36);
             textBoxYears.TabIndex = 33;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Transparent;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatAppearance.CheckedBackColor = Color.Transparent;
+            btnExit.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnExit.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Font = new Font("Algerian", 13.8F, FontStyle.Bold);
+            btnExit.ForeColor = Color.White;
+            btnExit.Location = new Point(854, 542);
+            btnExit.Margin = new Padding(3, 4, 3, 4);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(97, 54);
+            btnExit.TabIndex = 35;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click_1;
+            // 
+            // btnReturn
+            // 
+            btnReturn.BackColor = Color.Transparent;
+            btnReturn.FlatAppearance.BorderSize = 0;
+            btnReturn.FlatAppearance.CheckedBackColor = Color.Transparent;
+            btnReturn.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnReturn.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnReturn.FlatStyle = FlatStyle.Flat;
+            btnReturn.Font = new Font("Algerian", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnReturn.ForeColor = Color.White;
+            btnReturn.Location = new Point(842, 452);
+            btnReturn.Margin = new Padding(3, 4, 3, 4);
+            btnReturn.Name = "btnReturn";
+            btnReturn.Size = new Size(115, 62);
+            btnReturn.TabIndex = 34;
+            btnReturn.Text = "Return";
+            btnReturn.UseVisualStyleBackColor = false;
+            btnReturn.Click += btnReturn_Click_1;
             // 
             // SimpleInterest
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(982, 653);
+            Controls.Add(btnExit);
+            Controls.Add(btnReturn);
             Controls.Add(textBoxYears);
             Controls.Add(textBoxMonths);
             Controls.Add(textBoxDays);
@@ -198,8 +273,8 @@
             Controls.Add(radioButtonYearly);
             Controls.Add(radioButtonMonthly);
             Controls.Add(buttonCalculate);
-            Controls.Add(btnExit);
-            Controls.Add(btnReturn);
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "SimpleInterest";
             Text = "SimpleInterest";
             Load += SimpleInterest_Load;
@@ -208,9 +283,6 @@
         }
 
         #endregion
-
-        private Button btnExit;
-        private Button btnReturn;
         private Button buttonCalculate;
         private RadioButton radioButtonMonthly;
         private RadioButton radioButtonYearly;
@@ -224,5 +296,7 @@
         private TextBox textBoxDays;
         private TextBox textBoxMonths;
         private TextBox textBoxYears;
+        private Button btnExit;
+        private Button btnReturn;
     }
 }

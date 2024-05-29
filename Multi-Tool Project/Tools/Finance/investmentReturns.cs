@@ -88,5 +88,30 @@ namespace Multi_Tool_Project.Tools.Finance
             double totalYears = (days / 365.0) + (months / 12.0) + years;
             return principal * Math.Pow(1 + rate, totalYears);
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            FinanceTool financeForm = new FinanceTool();
+            financeForm.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Exiting the System, Goodbye!");
+            Thread.Sleep(50);
+            Application.Exit();
+
+        }
+
+        private void labelOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void investmentReturns_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

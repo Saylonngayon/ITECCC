@@ -31,6 +31,8 @@
             labelOutput = new Label();
             groupBoxInterestType = new GroupBox();
             groupBoxCompoundFrequency = new GroupBox();
+            btnExit = new Button();
+            btnReturn = new Button();
             groupBoxInterestType.SuspendLayout();
             groupBoxCompoundFrequency.SuspendLayout();
             SuspendLayout();
@@ -40,7 +42,7 @@
             radioButtonFixedROI.AutoSize = true;
             radioButtonFixedROI.Location = new Point(6, 19);
             radioButtonFixedROI.Name = "radioButtonFixedROI";
-            radioButtonFixedROI.Size = new Size(75, 19);
+            radioButtonFixedROI.Size = new Size(93, 24);
             radioButtonFixedROI.TabIndex = 0;
             radioButtonFixedROI.TabStop = true;
             radioButtonFixedROI.Text = "Fixed ROI";
@@ -51,7 +53,7 @@
             radioButtonCompoundInterest.AutoSize = true;
             radioButtonCompoundInterest.Location = new Point(6, 42);
             radioButtonCompoundInterest.Name = "radioButtonCompoundInterest";
-            radioButtonCompoundInterest.Size = new Size(128, 19);
+            radioButtonCompoundInterest.Size = new Size(157, 24);
             radioButtonCompoundInterest.TabIndex = 1;
             radioButtonCompoundInterest.TabStop = true;
             radioButtonCompoundInterest.Text = "Compound Interest";
@@ -62,7 +64,7 @@
             radioButtonDaily.AutoSize = true;
             radioButtonDaily.Location = new Point(6, 19);
             radioButtonDaily.Name = "radioButtonDaily";
-            radioButtonDaily.Size = new Size(51, 19);
+            radioButtonDaily.Size = new Size(64, 24);
             radioButtonDaily.TabIndex = 0;
             radioButtonDaily.TabStop = true;
             radioButtonDaily.Text = "Daily";
@@ -73,7 +75,7 @@
             radioButtonMonthly.AutoSize = true;
             radioButtonMonthly.Location = new Point(6, 42);
             radioButtonMonthly.Name = "radioButtonMonthly";
-            radioButtonMonthly.Size = new Size(70, 19);
+            radioButtonMonthly.Size = new Size(84, 24);
             radioButtonMonthly.TabIndex = 1;
             radioButtonMonthly.TabStop = true;
             radioButtonMonthly.Text = "Monthly";
@@ -84,7 +86,7 @@
             radioButtonYearly.AutoSize = true;
             radioButtonYearly.Location = new Point(6, 65);
             radioButtonYearly.Name = "radioButtonYearly";
-            radioButtonYearly.Size = new Size(56, 19);
+            radioButtonYearly.Size = new Size(69, 24);
             radioButtonYearly.TabIndex = 2;
             radioButtonYearly.TabStop = true;
             radioButtonYearly.Text = "Yearly";
@@ -92,69 +94,69 @@
             // 
             // textBoxRate
             // 
-            textBoxRate.Location = new Point(230, 30);
+            textBoxRate.Location = new Point(469, 144);
             textBoxRate.Name = "textBoxRate";
             textBoxRate.PlaceholderText = "Rate (%)";
-            textBoxRate.Size = new Size(100, 23);
+            textBoxRate.Size = new Size(131, 27);
             textBoxRate.TabIndex = 2;
             // 
             // textBoxPrincipal
             // 
-            textBoxPrincipal.Location = new Point(230, 56);
+            textBoxPrincipal.Location = new Point(469, 170);
             textBoxPrincipal.Name = "textBoxPrincipal";
             textBoxPrincipal.PlaceholderText = "Principal Amount";
-            textBoxPrincipal.Size = new Size(100, 23);
+            textBoxPrincipal.Size = new Size(131, 27);
             textBoxPrincipal.TabIndex = 3;
             // 
             // textBoxDays
             // 
-            textBoxDays.Location = new Point(230, 82);
+            textBoxDays.Location = new Point(469, 196);
             textBoxDays.Name = "textBoxDays";
             textBoxDays.PlaceholderText = "Days";
-            textBoxDays.Size = new Size(100, 23);
+            textBoxDays.Size = new Size(131, 27);
             textBoxDays.TabIndex = 4;
             // 
             // textBoxMonths
             // 
-            textBoxMonths.Location = new Point(230, 108);
+            textBoxMonths.Location = new Point(469, 222);
             textBoxMonths.Name = "textBoxMonths";
             textBoxMonths.PlaceholderText = "Months";
-            textBoxMonths.Size = new Size(100, 23);
+            textBoxMonths.Size = new Size(131, 27);
             textBoxMonths.TabIndex = 5;
             // 
             // textBoxYears
             // 
-            textBoxYears.Location = new Point(230, 134);
+            textBoxYears.Location = new Point(469, 248);
             textBoxYears.Name = "textBoxYears";
             textBoxYears.PlaceholderText = "Years";
-            textBoxYears.Size = new Size(100, 23);
+            textBoxYears.Size = new Size(131, 27);
             textBoxYears.TabIndex = 6;
             // 
             // buttonCalculate
             // 
-            buttonCalculate.Location = new Point(230, 160);
+            buttonCalculate.Location = new Point(478, 281);
             buttonCalculate.Name = "buttonCalculate";
-            buttonCalculate.Size = new Size(100, 23);
+            buttonCalculate.Size = new Size(100, 33);
             buttonCalculate.TabIndex = 7;
             buttonCalculate.Text = "Calculate";
             buttonCalculate.UseVisualStyleBackColor = true;
             buttonCalculate.Click += buttonCalculate_Click;
-            this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
             // labelOutput
             // 
             labelOutput.AutoSize = true;
-            labelOutput.Location = new Point(230, 195);
+            labelOutput.Location = new Point(478, 326);
             labelOutput.Name = "labelOutput";
-            labelOutput.Size = new Size(69, 15);
+            labelOutput.Size = new Size(89, 20);
             labelOutput.TabIndex = 8;
             labelOutput.Text = "Total Value: ";
+            labelOutput.Click += labelOutput_Click;
             // 
             // groupBoxInterestType
             // 
             groupBoxInterestType.Controls.Add(radioButtonFixedROI);
             groupBoxInterestType.Controls.Add(radioButtonCompoundInterest);
-            groupBoxInterestType.Location = new Point(12, 12);
+            groupBoxInterestType.Location = new Point(251, 126);
             groupBoxInterestType.Name = "groupBoxInterestType";
             groupBoxInterestType.Size = new Size(200, 75);
             groupBoxInterestType.TabIndex = 0;
@@ -166,16 +168,40 @@
             groupBoxCompoundFrequency.Controls.Add(radioButtonDaily);
             groupBoxCompoundFrequency.Controls.Add(radioButtonMonthly);
             groupBoxCompoundFrequency.Controls.Add(radioButtonYearly);
-            groupBoxCompoundFrequency.Location = new Point(12, 93);
+            groupBoxCompoundFrequency.Location = new Point(251, 207);
             groupBoxCompoundFrequency.Name = "groupBoxCompoundFrequency";
             groupBoxCompoundFrequency.Size = new Size(200, 100);
             groupBoxCompoundFrequency.TabIndex = 1;
             groupBoxCompoundFrequency.TabStop = false;
             groupBoxCompoundFrequency.Text = "Compound Frequency";
             // 
+            // btnExit
+            // 
+            btnExit.Location = new Point(15, 587);
+            btnExit.Margin = new Padding(3, 4, 3, 4);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(67, 37);
+            btnExit.TabIndex = 21;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
+            // btnReturn
+            // 
+            btnReturn.Location = new Point(18, 542);
+            btnReturn.Margin = new Padding(3, 4, 3, 4);
+            btnReturn.Name = "btnReturn";
+            btnReturn.Size = new Size(67, 37);
+            btnReturn.TabIndex = 20;
+            btnReturn.Text = "Return";
+            btnReturn.UseVisualStyleBackColor = true;
+            btnReturn.Click += btnReturn_Click;
+            // 
             // investmentReturns
             // 
-            ClientSize = new Size(352, 223);
+            ClientSize = new Size(982, 653);
+            Controls.Add(btnExit);
+            Controls.Add(btnReturn);
             Controls.Add(labelOutput);
             Controls.Add(buttonCalculate);
             Controls.Add(textBoxYears);
@@ -187,6 +213,7 @@
             Controls.Add(groupBoxInterestType);
             Name = "investmentReturns";
             Text = "Investment Returns Calculator";
+            Load += investmentReturns_Load;
             groupBoxInterestType.ResumeLayout(false);
             groupBoxInterestType.PerformLayout();
             groupBoxCompoundFrequency.ResumeLayout(false);
@@ -211,5 +238,7 @@
         private System.Windows.Forms.Label labelOutput;
         private System.Windows.Forms.GroupBox groupBoxInterestType;
         private System.Windows.Forms.GroupBox groupBoxCompoundFrequency;
+        private Button btnExit;
+        private Button btnReturn;
     }
 }
